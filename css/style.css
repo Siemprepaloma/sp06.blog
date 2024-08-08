@@ -195,6 +195,9 @@ h3 {
 .black_bg {
   background: #000000;
 }
+.whole-wrap {
+  background: #000000;
+}
 
 /* line 139, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 .mb-65 {
@@ -253,6 +256,31 @@ h3 {
   background: -webkit-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.8) 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.8) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cc000000',GradientType=0 );
+  /* IE6-9 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.overlay4 {
+  position: relative;
+  z-index: 0;
+}
+
+/* line 175, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
+.overlay4::before {
+  position: absolute;
+  content: "";
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0.8+100 */
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.566) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.577) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cc000000',GradientType=0 );
   /* IE6-9 */
@@ -732,6 +760,9 @@ h3 {
   padding-bottom: 7px;
   font-family: Ultrasliberi;
   text-align: left;
+}
+.section_title .arabic {
+  font-family: Khediawy;
 }
 
 @media (max-width: 767px) {
@@ -1324,7 +1355,7 @@ h3 {
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
-  top: -70px;
+  top: -71px;
   left: 0;
   right: 0;
   z-index: 990;
@@ -1486,6 +1517,10 @@ h3 {
 /* line 4, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_bg_2 {
   background-image: url(../img/banner/banner2.png);
+}
+
+.slider_bg_3 {
+  background-image: url(../img/random/217730799_4079895175464686_5799558508997898081_n.jpg);
 }
 
 /* line 7, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
@@ -2585,15 +2620,15 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   /* background: #000000; */
-  background-image: url(../img/random/ezgif.com-optimize.gif);
+  background-image: url(../img/random/8f71de74245542c3937957ac92ad3427.gif);
   position: relative;
   z-index: 9;
 }
 
 /* line 9, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .footer_top {
-  padding-top: 148px;
-  padding-bottom: 140px;
+  padding-top: 240px;
+  padding-bottom: 240px;
 }
 
 @media (max-width: 767px) {
@@ -2611,7 +2646,9 @@ h3 {
   color: #FF4533;
   margin-bottom: 24px;
 }
-
+.footer .footer_top .footer_widget .address_details{
+  font-size: 30px;
+}
 /* line 23, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget h3 {
   font-size: 30px;
@@ -2822,7 +2859,7 @@ h3 {
 
 /* line 75, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .sample-text-area {
-  background: #fff;
+  background: #000000;
   padding: 100px 0 70px 0;
 }
 
@@ -5822,4 +5859,134 @@ body {
 }
 .scroll-smooth {
   scroll-behavior: smooth;
+}
+
+.seemore {
+  border: none;
+  position: relative;
+  width: 200px;
+  height: 73px;
+  padding: 0;
+  z-index: 2;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  -webkit-mask-size: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(8px)
+ }
+ 
+ .seemore:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 0 0 0 white;
+  transition: all 2s ease;
+ }
+ 
+ .seemore:hover:after {
+  box-shadow: 0px -13px 56px 12px #ffffffa6;
+ }
+ 
+ .seemore span {
+  position: absolute;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 100;
+  left: 50%;
+  top: 39%;
+  letter-spacing: 3px;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  color: white;
+  transition: all 2s ease;
+  font-family: UltrasLiberi;
+ }
+ 
+ .seemore:hover span {
+  color: crimson;
+ }
+ 
+ .seemore:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease;
+ }
+ 
+ .seemore:hover:before {
+  width: 100%;
+ }
+ 
+ /* From Uiverse.io by htwarriors108 */ 
+.social-media {
+  position: relative;
+  border: none;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.social-media a {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-media a:hover {
+  transform: translateY(-20px);
+}
+
+.social-media a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s ease;
+}
+
+.social-media a:hover::before {
+  transform: skewX(45deg) translateX(-150px);
+}
+
+.social-media a svg {
+  width: 3em;
+}
+
+#facebook {
+  color: rgba(10, 128, 236, 0.7);
+}
+#instagram {
+  color: rgba(190, 35, 97, 0.997);
+}
+#youtube {
+  color: rgba(236, 10, 10, 0.7);
+}
+#twitter {
+  color: rgb(0, 0, 0);
+}
+.footer-social-media {
+  text-align: center;
+  margin-top: 7px;
 }

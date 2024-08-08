@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'arabswell';
+    font-style: normal;
+    font-weight: 300;
+    src:
+
+        url('arabswell_1.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Blaka-Regular';
+    font-style: normal;
+    font-weight: 300;
+    src:
+
+        url('Blaka-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 300;
+    src:
+
+        url('Cairo-VariableFont_slnt,wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Changa';
+    font-style: normal;
+    font-weight: 300;
+    src:
+
+        url('Changa-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Fustat';
+    font-style: normal;
+    font-weight: 300;
+    src:
+
+        url('Fustat-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Khediawy';
+    font-style: normal;
+    font-weight: 300;
+    src:
+
+        url('Khediawy.ttf') format('truetype');
+}
